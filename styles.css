@@ -1,0 +1,189 @@
+/* common */
+
+:root {
+  --nav: 19;
+  --necessary: 0;
+  --useful: 200;
+  --rarely: 120;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 800px;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+h1 {
+  margin: 0;
+}
+
+h2 {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  margin: 0 8px;
+}
+
+/* hero */
+
+.hero img {
+  display: block;
+  margin: 0 auto;
+  padding: 16px 0;
+}
+
+/* nav */
+
+.head {
+  background: lightgrey;
+  width: 32px;
+  height: 36px;
+  float: left;
+  border-top-left-radius: 16px;
+}
+
+nav h1 {
+  padding: 0 40px;
+  margin-bottom: 16px;
+  background: hsl(var(--nav), 100%, 74%);
+  border-top-left-radius: 16px;
+}
+
+nav .container {
+  display: flex;
+  gap: 12px;
+}
+
+nav section {
+  flex-grow: 1;
+  box-shadow: 4px 5px 3px rgba(0, 0, 0, 0.5);
+}
+
+nav section h2::before {
+  content: "▲";
+}
+
+nav section ul li::before {
+  content: "・";
+}
+
+nav .necessary {
+  outline: solid 2px hsl(var(--necessary), 100%, 50%);
+  background: hsl(var(--necessary), 100%, 93%);
+}
+
+nav .useful {
+  --useful: 200;
+  outline: solid 2px hsl(var(--useful), 100%, 50%);
+  background: hsl(var(--useful), 100%, 93%);
+}
+
+nav .rarely {
+  --rarely: 120;
+  outline: solid 2px hsl(var(--rarely), 100%, 50%);
+  background: hsl(var(--rarely), 100%, 93%);
+}
+
+/* main */
+
+main {
+  margin-top: 40px;
+}
+
+main .tableround {
+  padding: 18px 0;
+}
+
+main .tabletop {
+  padding-top: 18px;
+}
+
+main h1::before {
+  content: "☆";
+}
+
+main table {
+  margin: 0 auto;
+  border-spacing: 0;
+}
+
+main td {
+  padding: 4px 8px;
+}
+
+main td, main table, main th {
+  border: solid 1px rgb(0, 0, 0);
+}
+
+main span {
+  color: white;
+  background: hsla(100, 100%, 30%, 0.8);
+  padding: 3px 6px;
+  line-height: 26px;
+  border-radius: 3px;
+  vertical-align: middle;
+}
+
+/* necessary */
+
+main .necessary {
+  background-color: hsl(var(--necessary), 100%, 97%);
+}
+
+main .necessary h1 {
+  border-bottom: solid 2px hsl(var(--necessary), 100%, 50%);
+  border-top: solid 2px hsl(var(--necessary), 100%, 50%);
+  background: hsl(var(--necessary), 100%, 93%);
+}
+
+/* useful */
+
+main .useful {
+  background-color: hsl(var(--useful), 100%, 97%);
+}
+
+main .useful h1 {
+  border-bottom: solid 2px hsl(var(--useful), 100%, 50%);
+  border-top: solid 2px hsl(var(--useful), 100%, 50%);
+  background: hsl(var(--useful), 100%, 93%);
+}
+
+main .useful tbody tr + tr + tr + tr td + td + td {
+  text-align: center;
+}
+
+/* rarely */
+
+main .rarely {
+  background-color: hsl(var(--rarely), 100%, 97%);
+}
+
+main .rarely h1 {
+  border-bottom: solid 2px hsl(var(--rarely), 100%, 50%);
+  border-top: solid 2px hsl(var(--rarely), 100%, 50%);
+  background: hsl(var(--rarely), 100%, 93%);
+}
+
+
+@media (min-width: 800px) {
+  body {
+    margin: 0 auto;
+  }
+}
