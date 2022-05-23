@@ -143,7 +143,7 @@ main span {
 
 /* necessary */
 
-main .necessary {
+main .necessary table {
   background-color: hsl(var(--necessary), 100%, 97%);
 }
 
@@ -155,7 +155,7 @@ main .necessary h1 {
 
 /* useful */
 
-main .useful {
+main .useful table {
   background-color: hsl(var(--useful), 100%, 97%);
 }
 
@@ -171,7 +171,7 @@ main .useful tbody tr + tr + tr + tr td + td + td {
 
 /* rarely */
 
-main .rarely {
+main .rarely table {
   background-color: hsl(var(--rarely), 100%, 97%);
 }
 
@@ -182,7 +182,7 @@ main .rarely h1 {
 }
 
 
-@media (min-width: 800px) {
+@media (min-width: 600px) {
   body {
     margin: 0 auto;
   }
