@@ -68,6 +68,7 @@ nav h1 {
 
 nav .container {
   display: flex;
+  flex-wrap: wrap;
   gap: 12px;
 }
 
@@ -87,18 +88,21 @@ nav section ul li::before {
 nav .necessary {
   outline: solid 2px hsl(var(--necessary), 100%, 50%);
   background: hsl(var(--necessary), 100%, 93%);
+  min-width: 128px;
 }
 
 nav .useful {
   --useful: 200;
   outline: solid 2px hsl(var(--useful), 100%, 50%);
   background: hsl(var(--useful), 100%, 93%);
+  min-width: 208px;
 }
 
 nav .rarely {
   --rarely: 120;
   outline: solid 2px hsl(var(--rarely), 100%, 50%);
   background: hsl(var(--rarely), 100%, 93%);
+  min-width: 208px;
 }
 
 /* main */
@@ -181,8 +185,13 @@ main .rarely h1 {
   background: hsl(var(--rarely), 100%, 93%);
 }
 
+@media (max-width: 643px) {
+  body {
+    background: red;
+  }
+}
 
-@media (min-width: 600px) {
+@media (min-width: 800px) {
   body {
     margin: 0 auto;
   }
