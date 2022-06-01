@@ -185,11 +185,6 @@ main .rarely h1 {
   background: hsl(var(--rarely), 100%, 93%);
 }
 
-@media (max-width: 643px) {
-  body {
-    background: red;
-  }
-}
 
 @media (min-width: 800px) {
   body {
